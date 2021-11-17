@@ -3,19 +3,28 @@
     font-family: 'Courier New', Courier, monospace;
 }
 body{
-    background: rgb(248, 234, 131);
-    text-align: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+body::after{
+        content: "";
+        background: url(https://st2.depositphotos.com/7668048/46319/v/450/depositphotos_463197070-stock-illustration-astronaut-rocket-alien-open-space.jpg);
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+      
+}
 #res{
-    color: rgb(106, 227, 248) ;
+    color: #175292;
     font-weight: bold;
     font-size: 40px;
-
 }
 #game{
     width: 360px;
@@ -23,7 +32,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    background: rgb(106, 227, 248);
+    background: #aabfd5;
     font-size: 80px;
     
 }
@@ -37,7 +46,7 @@ body{
 #again{
     border: none;
     color: black;
-    background: rgb(106, 227, 248);
+    background: #175292;
     padding: 10px 16px;
     font-size: 20px;
     border-radius: 5px;

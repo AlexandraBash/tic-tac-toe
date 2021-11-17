@@ -5,8 +5,8 @@ let btnGame = document.getElementById('again');
 game.addEventListener('click', init);
 let turns = document.getElementById('turns');
 let step = false;
-let plane = '&#9992';
-let cloud = '&#9729';
+let plane = '&#128640';
+let cloud = '&#9928';
 for (let i = 0; i < 9; i++){
     document.getElementById('game').innerHTML+='<div class="block"></div>';
 }
@@ -63,7 +63,7 @@ for( let i = 0; i < comb.length; i++){
         allblock[comb[i][0]].classList.add('active');
          allblock[comb[i][1]].classList.add('active');
          allblock[comb[i][1]].classList.add('active');
-         res.innerText = 'Player 1 WON!!!';
+         res.innerText = 'Player 1 WON!';
          game.removeEventListener('click', init);
     }
     else if(allblock[comb[i][0]].classList.contains('o') &&
@@ -72,10 +72,10 @@ for( let i = 0; i < comb.length; i++){
         allblock[comb[i][0]].classList.add('active');
          allblock[comb[i][1]].classList.add('active');
          allblock[comb[i][1]].classList.add('active');
-         res.innerText = 'Player 2 WON!!!';
+         res.innerText = 'Player 2 WON!';
          game.removeEventListener('click', init);
     }else if(hod == 10){
-        res.innerText = 'IT IS A DRAW!!!';
+        res.innerText = 'IT IS A DRAW!';
         game.removeEventListener('click', init);
     }
 }
